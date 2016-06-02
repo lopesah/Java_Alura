@@ -1,0 +1,31 @@
+
+public class TestaFuncionario {
+	
+	public static void main (String[] args){
+		Funcionario f1 = new Funcionario();
+		
+		f1.nome = "Alexandre";
+		f1.salario = 10000;
+		f1.recebeAumento(2000);
+		f1.departamento = "Tecnologia da Informação";
+		Data dataAdmissao = new Data();
+		dataAdmissao.dia = 2;
+		dataAdmissao.mes = 7;
+		dataAdmissao.ano = 2013;
+		f1.dataEntrada = dataAdmissao;
+		f1.rg = "32.876.674-4";
+		System.out.println("Salário Atual: " + f1.salario);
+		System.out.println("Ganho Anual: " + f1.calculaGanhoAnual());
+		
+		f1.mostra();
+		
+		Funcionario f2 = f1;
+		
+		if (f1 == f2){
+			System.out.println("Igual");
+		}else{
+			System.out.println("Diferente");
+		}
+	}
+
+}

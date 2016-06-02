@@ -1,0 +1,19 @@
+
+public class TestaFuncionario {
+	
+	public static void main (String[] args){
+		Funcionario f1 = new Funcionario();
+		
+		f1.nome = "Alexandre";
+		f1.salario = 10000;
+		f1.recebeAumento(2000);
+		f1.departamento = "Tecnologia da Informação";
+		f1.dataEntrada = "02/07/2013";
+		f1.rg = "32.876.674-4";
+		System.out.println("Salário Atual: " + f1.salario);
+		System.out.println("Ganho Anual: " + f1.calculaGanhoAnual());
+		
+		f1.mostra();
+	}
+
+}
