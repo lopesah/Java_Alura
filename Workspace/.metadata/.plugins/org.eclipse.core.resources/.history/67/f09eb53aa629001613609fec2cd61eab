@@ -1,0 +1,9 @@
+
+public class Empresa {
+	
+	String nome;
+	String cnpj;
+	Funcionario[] funcionarios;
+	String endereco;
+	String telefone;
+}

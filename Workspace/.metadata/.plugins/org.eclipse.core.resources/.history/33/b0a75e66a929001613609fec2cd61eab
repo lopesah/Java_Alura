@@ -1,0 +1,27 @@
+
+public class Empresa {
+	
+	String nome;
+	String cnpj;
+	Funcionario[] funcionarios;
+	String endereco;
+	String telefone;
+	
+	void adiciona(Funcionario f){
+		this.funcionarios[this.funcionarios.length] = f;
+	}
+	
+	void imprimeEmpresa{
+		System.out.println("**************************************************");
+		System.out.println("Empresa: " + this.nome);
+		System.out.println("CNPJ: " + this.cnpj);
+		System.out.println("Endereço: " + this.endereco);
+		System.out.println("Telefone: " + this.telefone);
+		System.out.println("**************************************************");
+		System.out.println("*******************FUNCIONARIOS*******************");
+		for (int i = 0; i < this.funcionarios.length; i++){
+			this.funcionarios[i].mostra();
+		}
+	}
+	
+}

@@ -1,0 +1,13 @@
+
+public class Empresa {
+	
+	String nome;
+	String cnpj;
+	Funcionario[] funcionarios;
+	String endereco;
+	String telefone;
+	
+	void adiciona(Funcionario f){
+		this.funcionarios[this.funcionarios.length] = f;
+	}
+}

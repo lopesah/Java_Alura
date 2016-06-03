@@ -1,0 +1,24 @@
+
+public class TestaEmpresa {
+
+	public static void main(String[] args) {
+		Empresa empresa = new Empresa();
+		empresa.nome = "Lopesah Tecnologia";
+		empresa.cnpj = "11222333455";
+		empresa.telefone = "11 965522 55441";
+		empresa.endereco = "Rua dos Testes S/N";
+		Funcionario[] funcionarios = new Funcionario[10];
+		empresa.funcionarios = funcionarios;
+		
+		for (int i = 0; i < 10; i++){
+			Funcionario f = new Funcionario();
+			Data d = new Data();
+			d.preencheData(i, 5, 2013);
+			f.incluiFuncionario("Alexandre " + i, i + " TI", 10000.0 + 1000 * i, d,"R" + i + i + i + i + i);
+			empresa.adiciona(f);
+		}
+		
+		empresa.imprimeEmpresa();
+	}
+
+}

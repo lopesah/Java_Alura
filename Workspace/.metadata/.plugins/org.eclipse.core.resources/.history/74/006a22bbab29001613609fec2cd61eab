@@ -1,0 +1,36 @@
+
+public class Funcionario {
+	private String nome;
+	private String departamento;
+	private double salario;
+	private Data dataEntrada;
+	private String rg;
+	
+	public void recebeAumento (double valor){
+		double novoSalario = this.salario + valor;
+		this.salario = novoSalario;
+	}
+	
+	public double calculaGanhoAnual(){
+		return this.salario * 12;
+	}
+	
+	public void mostra(){
+		System.out.println("*********************************************************");
+		System.out.println("Funcionário: " + this.nome);
+		System.out.println("Departamento: " + this.departamento);
+		System.out.println("Salário: " + this.salario);
+		System.out.println("Data de Admissão: " + this.dataEntrada.getFormatada());
+		System.out.println("RG: " + this.rg);
+		System.out.println("*********************************************************");
+	}
+	
+	public void incluiFuncionario(String nome, String departamento, double salario, Data dataEntrada, String rg){
+		this.nome = nome;
+		this.departamento = departamento;
+		this.salario = salario;
+		this.dataEntrada = dataEntrada;
+		this.rg = rg;
+	}
+	
+}
